@@ -4,6 +4,7 @@
   "description": "pokeapi",
   "main": "index.js",
   "scripts": {
+    "start": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,5 +19,16 @@
   "bugs": {
     "url": "https://github.com/LGerMa/poke/issues"
   },
-  "homepage": "https://github.com/LGerMa/poke#readme"
+  "homepage": "https://github.com/LGerMa/poke#readme",
+  "dependencies": {
+    "express": "^4.14.1",
+    "materialize-css": "^0.98.0",
+    "pug": "^2.0.0-beta11"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0"
+  }
 }
