@@ -1,6 +1,10 @@
-html
-	head
-		title=title
-	body
-		h1 "Hola mundo"
-		h2 ksk2
+extends layout
+block contenido
+	.row
+		h2 LOGIN
+	.row
+		form.col.s12
+			.row
+				.input-field.col.s6
+					input(placeholder="usuario", name="user")
+					label(for="user") Usuario

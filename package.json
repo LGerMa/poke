@@ -4,7 +4,9 @@
   "description": "pokeapi",
   "main": "index.js",
   "scripts": {
-    "start": "gulp",
+    "build-css": "node-sass --include-path scss index.scss public/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -26,11 +28,7 @@
     "pug": "^2.0.0-beta11"
   },
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-nodemon": "^2.2.1",
-    "gulp-pug": "^3.2.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.1.0",
+    "node-sass": "^4.5.0",
     "nodemon": "^1.11.0"
   }
 }

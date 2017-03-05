@@ -1,0 +1,24 @@
+doctype html
+html
+	head
+		title=title
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		//-link(href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css')
+		link(rel='stylesheet', href='style.css')
+		block extraCss
+	body
+		.container
+			nav.light-blue.lighten-1(role='navigation')
+				.nav-wrapper.container
+					a#logo-container.brand-logo(href='#') Logo
+					ul.right.hide-on-med-and-down
+						li
+							a(href='#') Navbar Link
+					ul#nav-mobile.side-nav
+						li
+							a(href='#') Navbar Link
+					a.button-collapse(href='#', data-activates='nav-mobile')
+						i.material-icons menu
+			block contenido
+		script(src='https://code.jquery.com/jquery-2.2.3.min.js', integrity='sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=', crossorigin='anonymous')
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js')
